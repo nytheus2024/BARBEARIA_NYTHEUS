@@ -5,7 +5,7 @@
 .principal{
 
      padding: 30px;
-    background-color: #e9c4ff
+    background-color: #ccc
 }
 .titulo-principal{
     padding-left: 20px;
@@ -39,10 +39,10 @@ p {
 }
  em   strong{
 
-        color: #8127e7;;
+        color: orangered;;
 }
 
-.bosta{
+.Barba{
     width: 100%;
 }
 
@@ -53,7 +53,7 @@ p {
 
 .beneficios{
    
-    background-color: #bab8fc;
+    background-color: #ccc;
 }
 
 .listabeneficios{
@@ -74,4 +74,14 @@ p {
 .imagem{
 
     width: 50%;
+}
+footer{
+    font-size: 26px;
+    color: white;
+    height: 300px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
 }

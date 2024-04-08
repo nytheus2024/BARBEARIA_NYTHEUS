@@ -55,7 +55,7 @@ section>div {
 }
 
 section>div:hover {
-    border: 1px solid orange;
+    border: 1px solid black;
 }
 
 div>h2 {
