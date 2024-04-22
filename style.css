@@ -1,81 +1,82 @@
-*{
+* {
     margin: 0;
-}
-
-.principal{
-
-     padding: 30px;
-    background-color: #ccc
-}
-.titulo-principal{
-    padding-left: 20px;
-    padding: 10px;
+    padding: 0;
 
 }
-h1{
 
-    text-align: left;
-}
-h2,h3{
-    padding: 20px 0;
-   
-text-align: center;
-}
-h2{
-    font-size: 40px;
+
+header {
+    background-color: rgb(207, 207, 207);
+
 }
 
-h3{
-    font-size: 30px;
-}
-p {
-   
-    text-align: center;
+.menu {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
-.boi {
+ul {
+    list-style-type: none;
+    display: flex;
 
+}
+
+li>a {
+    color: black;
     font-size: 20px;
-}
- em   strong{
-
-        color: orangered;;
-}
-
-.Barba{
-    width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 20px;
+    text-transform: uppercase;
 }
 
-.nerdola{
+a:hover {
+    color: #c78c19;
+    text-decoration: underline;
+}
 
+
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+section>div {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 320px;
+    height: 420px;
+    margin-right: 50px;
     text-align: center;
+    transition: all 0.1s linear;
 }
 
-.beneficios{
-   
-    background-color: #ccc;
+section>div:hover {
+    border: 1px solid #000000;
+    transform: scale(1.05);
 }
 
-.listabeneficios{
-
-   display: inline-block;
-   
-    vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
-   
-
+div>h2 {
+    margin-top: 20px;
+    font-size: 2.3em;
 }
 
-.itens{
-    font-style: italic;
+strong {
+    margin-top: 10px;
+    font-size: 25px;
 }
 
-.imagem{
-
-    width: 50%;
+.preco {
+    margin-top: 15px;
 }
-footer{
+
+footer {
+    margin-top: 50px;
     font-size: 26px;
     color: white;
     height: 300px;
@@ -83,5 +84,52 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 20px;
+}
 
+@media(max-width:1050px) {
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section>div {
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-width:500px) {
+    li>a {
+
+        padding: 7px;
+        font-size: 18px;
+    }
+
+    h1>img {
+
+        width: 100px;
+    }
+
+    section>div {
+        margin-right: 0;
+    }
+}
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+}
+form label{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+form input{
+    display:block ;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
 }
